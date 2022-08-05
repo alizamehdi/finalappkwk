@@ -1,31 +1,28 @@
 //
-//  CompanyList.swift
+//  Alternatives.swift
 //  finalappkwk
 //
-//  Created by scholar on 8/4/22.
+//  Created by Aliza Mehdi on 8/5/22.
 //
 
 import UIKit
 
-class CompanyList: UIViewController {
+class Alternatives: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
         Company1Outlet.isHidden = true
         Company2Outlet.isHidden = true
         Company3Outlet.isHidden = true
         Company4Outlet.isHidden = true
         
-        
-        
-        
-        
-        
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-    
     @IBOutlet weak var Company1Outlet: UILabel!
     
     @IBOutlet weak var Company2Outlet: UILabel!
@@ -33,16 +30,18 @@ class CompanyList: UIViewController {
     @IBOutlet weak var Company3Outlet: UILabel!
     
     @IBOutlet weak var Company4Outlet: UILabel!
-    /*
-    // MARK: - Navigation
+    
+    // MARK: - Table view data source
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 0
     }
-    */
 
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return 0
+    }
     @IBAction func Company1(_ sender: Any) {
         Company1Outlet.isHidden = false
         Company2Outlet.isHidden = true
@@ -55,13 +54,11 @@ class CompanyList: UIViewController {
         Company1Outlet.isHidden = true
         Company3Outlet.isHidden = true
     }
-    
     @IBAction func Company3(_ sender: Any) {
         Company3Outlet.isHidden = false
         Company1Outlet.isHidden = true
         Company2Outlet.isHidden = true
     }
-    
     
     @IBAction func Company4(_ sender: Any) {
         Company4Outlet.isHidden = false
@@ -70,10 +67,3 @@ class CompanyList: UIViewController {
         Company2Outlet.isHidden = true
     }
     
-    
-    
-    
-    
-    
-    
-}
