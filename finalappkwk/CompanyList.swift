@@ -30,6 +30,8 @@ class CompanyList: UIViewController {
     @IBOutlet weak var Company2Outlet: UILabel!
     
     @IBOutlet weak var Company3Outlet: UILabel!
+    
+    @IBOutlet weak var Company4Outlet: UILabel!
     /*
     // MARK: - Navigation
 
@@ -60,6 +62,12 @@ class CompanyList: UIViewController {
     }
     
     
+    @IBAction func Company4(_ sender: Any) {
+        Company4Outlet.isHidden = false
+        Company3Outlet.isHidden = true
+        Company1Outlet.isHidden = true
+        Company2Outlet.isHidden = true
+    }
     
     
     
