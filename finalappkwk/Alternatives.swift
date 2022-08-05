@@ -31,21 +31,13 @@ class Alternatives: UITableViewController {
     
     @IBOutlet weak var Company4Outlet: UILabel!
     
-    // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
     @IBAction func Company1(_ sender: Any) {
         Company1Outlet.isHidden = false
         Company2Outlet.isHidden = true
         Company3Outlet.isHidden = true
+        Company4Outlet.isHidden = true
         
     }
     
@@ -53,11 +45,16 @@ class Alternatives: UITableViewController {
         Company2Outlet.isHidden = false
         Company1Outlet.isHidden = true
         Company3Outlet.isHidden = true
+        Company4Outlet.isHidden = true
+        
     }
+    
     @IBAction func Company3(_ sender: Any) {
         Company3Outlet.isHidden = false
         Company1Outlet.isHidden = true
         Company2Outlet.isHidden = true
+        Company4Outlet.isHidden = true
+        
     }
     
     @IBAction func Company4(_ sender: Any) {
@@ -67,3 +64,4 @@ class Alternatives: UITableViewController {
         Company2Outlet.isHidden = true
     }
     
+}

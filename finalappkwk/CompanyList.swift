@@ -47,19 +47,21 @@ class CompanyList: UIViewController {
         Company1Outlet.isHidden = false
         Company2Outlet.isHidden = true
         Company3Outlet.isHidden = true
-        
+        Company4Outlet.isHidden = true
     }
     
     @IBAction func Company2(_ sender: Any) {
         Company2Outlet.isHidden = false
         Company1Outlet.isHidden = true
         Company3Outlet.isHidden = true
+        Company4Outlet.isHidden = true
     }
     
     @IBAction func Company3(_ sender: Any) {
         Company3Outlet.isHidden = false
         Company1Outlet.isHidden = true
         Company2Outlet.isHidden = true
+        Company4Outlet.isHidden = true
     }
     
     

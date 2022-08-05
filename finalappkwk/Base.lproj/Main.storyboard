@@ -112,10 +112,10 @@
             </objects>
             <point key="canvasLocation" x="653.62318840579712" y="83.705357142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Alternatives-->
         <scene sceneID="Xw4-7h-jLP">
             <objects>
-                <viewController id="fQa-fn-Qcb" sceneMemberID="viewController">
+                <viewController id="fQa-fn-Qcb" customClass="Alternatives" customModule="finalappkwk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IC2-j1-Iu0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -174,6 +174,7 @@ Cg
                                                 <buttonConfiguration key="configuration" style="plain" title="Patagonia"/>
                                                 <connections>
                                                     <action selector="Company1:" destination="s8r-xR-02W" eventType="touchUpInside" id="UHD-TO-YnA"/>
+                                                    <action selector="Company1:" destination="fQa-fn-Qcb" eventType="touchUpInside" id="ebD-BQ-feV"/>
                                                 </connections>
                                             </button>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="patagonia" translatesAutoresizingMaskIntoConstraints="NO" id="QyD-jU-8LU">
@@ -197,6 +198,10 @@ Cg
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Levi's"/>
+                                                <connections>
+                                                    <action selector="Company2:" destination="fQa-fn-Qcb" eventType="touchUpInside" id="EhJ-qL-IbE"/>
+                                                    <action selector="Company2:" destination="oLx-m0-RTn" eventType="touchUpInside" id="Wep-s8-HLB"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdl-5B-Bid">
                                                 <rect key="frame" x="169" y="402" width="217" height="161"/>
@@ -236,6 +241,10 @@ Cgo
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Lucy &amp; Yak"/>
+                                                <connections>
+                                                    <action selector="Company3:" destination="fQa-fn-Qcb" eventType="touchUpInside" id="zY6-Ee-21J"/>
+                                                    <action selector="Company3:" destination="oLx-m0-RTn" eventType="touchUpInside" id="zgi-Su-qKv"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRR-2Y-n8D">
                                                 <rect key="frame" x="177" y="725" width="217" height="161"/>
@@ -303,6 +312,15 @@ CgoKA
                                                 </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yvo-px-kUG">
+                                                <rect key="frame" x="230" y="1030" width="67" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <connections>
+                                                    <action selector="Company4:" destination="fQa-fn-Qcb" eventType="touchUpInside" id="Eny-Vz-25q"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.96078431610000004" green="0.92941176889999999" blue="0.84705877299999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
@@ -328,8 +346,15 @@ CgoKA
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="LtP-yf-XVZ"/>
+                    <connections>
+                        <outlet property="Company1Outlet" destination="yaf-EK-Uew" id="etL-3j-aEP"/>
+                        <outlet property="Company2Outlet" destination="rdl-5B-Bid" id="BYF-tK-EUi"/>
+                        <outlet property="Company3Outlet" destination="YRR-2Y-n8D" id="RK3-LL-d2K"/>
+                        <outlet property="Company4Outlet" destination="SOt-5b-dwu" id="rNN-GU-2ie"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iLz-ZU-t8r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="oLx-m0-RTn" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2042.0289855072465" y="83.705357142857139"/>
         </scene>
